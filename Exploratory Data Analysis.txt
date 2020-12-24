@@ -1,0 +1,36 @@
+//////////Exploratory Data Analysis (EDA) Using Python//////////
+
+Exploratory Data Analysis is an approach to analyzing data sets to summarize their main characteristics,often with visual methods.
+EDA involves looking at and describing the data set from different angles and then summarizing it.
+Data Analysis: Data Analysis is the statistics and probability to figure out trends in the data set. It is used to show historical
+data by using some analytics tools. It helps in drilling down the information, to transform metrics, facts, and figures into 
+initiatives for improvement.
+
+data = pd.read_csv('StudentsPerformance.csv')
+data.head()
+
+data.tail()
+
+data.shape
+
+#Shows columns of the table
+data.columns
+
+#Shows unique vales present in dataset
+data.nunique()
+
+data['gender'].unique()
+
+#Cleaning the dataset
+data.isnull().sum()
+
+Outliers are data points that are far from other data points. They’re unusual values in a dataset. Outliers are problematic for 
+many statistical analyses because they can cause tests to either miss significant findings or distort real results.
+
+Example: If someone got 69 & other got 75. If someone gets 0, then this is a outlier. It can be due to variability in measurement 
+or it may indicate experimental error as well.
+It is excluded because it can cause error in statistical analysis.
+
+
+
+
